@@ -11,7 +11,6 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require bootstrap-datepicker
 //= require jquery_ujs
 //= require ckeditor/ckeditor
 //= require_tree .

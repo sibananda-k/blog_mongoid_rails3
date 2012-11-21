@@ -2,10 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 
+
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem "ckeditor", "3.7.3"
-gem 'sqlite3'
+group :development do
+	gem 'sqlite3'
+end
 gem 'mongoid', '3.0.4'
 gem 'bson_ext'
 gem 'bootstrap-sass'
@@ -38,4 +42,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-
+group :production do
+	gem 'pg'
+end
+gem "thin"
+gem "heroku"
