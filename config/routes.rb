@@ -8,7 +8,7 @@ BlogMongoRails3::Application.routes.draw do
     resources :comments
   end
 
-  root :to => "articles#index"
+  
 
   
 end
